@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>김정호 | 디지털 명함 & 이력서</title>
+    <meta name="description" content="전 배틀그라운드 프로게이머, 대학 졸업, 그리고 현재 대한민국 육군 복무 중인 김정호의 웹 이력서 및 디지털 명함입니다.">
+    <!-- Open Graph SEO -->
+    <meta property="og:title" content="김정호 | 디지털 명함 & 이력서">
+    <meta property="og:description" content="압박 속에서도 침착함을 유지하며, 언제나 최고의 결과를 향해 도전하는 김정호의 포트폴리오.">
+    <meta property="og:image" content="assets/profile.png">
+    <meta property="og:type" content="website">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Elements for Premium Neon Vibe -->
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="#" class="logo">JH.<span>KIM</span></a>
+            <nav class="nav-links">
+                <a href="#about" class="nav-item active">About</a>
+                <a href="#timeline" class="nav-item">Timeline</a>
+                <a href="#skills" class="nav-item">Skills</a>
+                <a href="#contact" class="nav-item">Contact</a>
+            </nav>
+            <button class="nav-toggle" aria-label="Toggle Navigation" id="navToggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Scroll Snapping Container -->
+    <div class="scroll-container">
+        <!-- Section 1: Hero & Business Card -->
+        <section id="about" class="snap-section hero-section">
+            <div class="hero-container">
+                <!-- Left: Intro Text -->
+                <div class="hero-text-content">
+                    <div class="badge-wrapper">
+                        <span class="hero-badge"><i class="fa-solid fa-gamepad"></i> Former PUBG Pro Gamer</span>
+                        <span class="hero-badge badge-military"><i class="fa-solid fa-shield-halved"></i> Active Soldier</span>
+                    </div>
+                    <h1 class="hero-title">
+                        안녕하세요, <br>
+                        <span class="name-highlight">김정호</span>입니다.
+                    </h1>
+                    <p class="hero-subtitle">
+                        위기의 순간 가장 강렬한 판단을 내립니다. 전 배틀그라운드 프로게이머이자 대학교 졸업생, 그리고 현재 대한민국 육군에서 복무하며 끊임없이 성장해 나가는 김정호입니다. 오른쪽 명함을 클릭해서 세부 프로필을 확인해보세요.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#timeline" class="btn btn-primary">이력 타임라인 <i class="fa-solid fa-arrow-down"></i></a>
+                        <a href="#contact" class="btn btn-secondary">연락처 복사 <i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Right: Interactive 3D Business Card -->
+                <div class="hero-image-content">
+                    <div class="card-wrapper">
+                        <div class="business-card" id="businessCard">
+                            <!-- Front Side -->
+                            <div class="card-face card-front">
+                                <div class="card-chip"></div>
+                                <div class="card-top">
+                                    <div class="card-logo">JH.<span>KIM</span></div>
+                                    <div class="card-badge">PRO</div>
+                                </div>
+                                <div class="card-middle">
+                                    <div class="card-avatar">
+                                        <img src="assets/profile.png" alt="김정호">
+                                    </div>
+                                    <div class="card-info">
+                                        <h3 class="card-name">김정호</h3>
+                                        <p class="card-title">Professional Gamer & Soldier</p>
+                                        <span class="card-birth"><i class="fa-solid fa-cake-candles"></i> 2002.01.29</span>
+                                    </div>
+                                </div>
+                                <div class="card-bottom">
+                                    <div class="card-contact-info">
+                                        <span><i class="fa-solid fa-location-dot"></i> 대한민국</span>
+                                        <span><i class="fa-solid fa-shield-halved"></i> 대한민국 육군 군 복무 중</span>
+                                    </div>
+                                    <div class="card-action-hint">
+                                        Click to Flip <i class="fa-solid fa-rotate"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Back Side -->
+                            <div class="card-face card-back">
+                                <div class="card-back-pattern"></div>
+                                <div class="card-top">
+                                    <h4 class="card-back-title">CHARACTER PROFILE</h4>
+                                    <div class="card-logo">JH.<span>KIM</span></div>
+                                </div>
+                                <div class="card-back-stats">
+                                    <div class="stat-item">
+                                        <span class="stat-label"><i class="fa-solid fa-crosshairs"></i> PUBG ROLE</span>
+                                        <span class="stat-value">Order / Attacker</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-label"><i class="fa-solid fa-graduation-cap"></i> EDUCATION</span>
+                                        <span class="stat-value">Univ. Graduated</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-label"><i class="fa-solid fa-shield-halved"></i> MILITARY</span>
+                                        <span class="stat-value">ROK Army Soldier</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-label"><i class="fa-solid fa-award"></i> CERTIFICATE</span>
+                                        <span class="stat-value text-muted">None (실력으로 증명)</span>
+                                    </div>
+                                </div>
+                                <div class="card-back-quote">
+                                    "압박감 속에서 승리의 길을 찾는 것이 저의 특기입니다."
+                                </div>
+                                <div class="card-bottom">
+                                    <div class="card-action-hint">
+                                        Click to Flip <i class="fa-solid fa-rotate"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator">
+                <span class="scroll-text">Scroll Down</span>
+                <i class="fa-solid fa-chevron-down bounce-animation"></i>
+            </div>
+        </section>
+
+        <!-- Section 2: Timeline -->
+        <section id="timeline" class="snap-section timeline-section">
+            <div class="section-header">
+                <span class="section-tag">Career History</span>
+                <h2 class="section-title">인생의 발자취</h2>
+                <p class="section-desc">프로게이머의 세계에서 대학교 졸업, 그리고 육군 군 복무까지의 여정입니다.</p>
+            </div>
+
+            <div class="timeline-container">
+                <!-- Timeline Item 1 -->
+                <div class="timeline-item reveal-on-scroll">
+                    <div class="timeline-dot-container">
+                        <div class="timeline-dot active-dot"><i class="fa-solid fa-shield-halved"></i></div>
+                    </div>
+                    <div class="timeline-content card-glass">
+                        <div class="timeline-time">현재</div>
+                        <h3 class="timeline-title">대한민국 육군 현역 군인 복무</h3>
+                        <p class="timeline-org">대한민국 육군</p>
+                        <p class="timeline-text">
+                            대학교 졸업 후 입대하여 현재 국가의 의무를 수행하고 있습니다. 군 복무 기간 동안 철저한 규율 준수, 협동 정신, 책임감을 체득하며 강인한 리더십과 끈기를 단련하고 있습니다.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag">책임감</span>
+                            <span class="tag">체력</span>
+                            <span class="tag">리더십</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 2 -->
+                <div class="timeline-item reveal-on-scroll">
+                    <div class="timeline-dot-container">
+                        <div class="timeline-dot"><i class="fa-solid fa-graduation-cap"></i></div>
+                    </div>
+                    <div class="timeline-content card-glass">
+                        <div class="timeline-time">이전</div>
+                        <h3 class="timeline-title">대학교 졸업</h3>
+                        <p class="timeline-org">학사 학위 취득</p>
+                        <p class="timeline-text">
+                            정규 학사 과정을 성실히 밟아 대학 과정을 졸업했습니다. 체계적인 지식 습득과 분석 능력을 키웠으며, 다양한 프로젝트와 팀 활동을 주도하여 조직 내 융화를 도모했습니다.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag">학사 졸업</span>
+                            <span class="tag">문제 해결</span>
+                            <span class="tag">분석력</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 3 -->
+                <div class="timeline-item reveal-on-scroll">
+                    <div class="timeline-dot-container">
+                        <div class="timeline-dot"><i class="fa-solid fa-gamepad"></i></div>
+                    </div>
+                    <div class="timeline-content card-glass">
+                        <div class="timeline-time">이전</div>
+                        <h3 class="timeline-title">배틀그라운드 (PUBG) 프로게이머 활동</h3>
+                        <p class="timeline-org">eSports Professional Athlete</p>
+                        <p class="timeline-text">
+                            국내외 무대에서 활약했던 전 배틀그라운드 프로게이머입니다. 찰나의 판단이 승패를 좌우하는 e스포츠 세계에서, 0.1초의 결정력과 정교한 오더(Order), 팀원 간 소통 능력 및 멘탈 조율을 극한으로 단련했습니다.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag">PUBG Pro</span>
+                            <span class="tag">피지컬</span>
+                            <span class="tag">전략적 오더</span>
+                            <span class="tag">멘탈 케어</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Skills -->
+        <section id="skills" class="snap-section skills-section">
+            <div class="section-header">
+                <span class="section-tag">Core Capabilities</span>
+                <h2 class="section-title">보유 강점 & 역량</h2>
+                <p class="section-desc">자격증이라는 종이 한 장보다 더 단단한, 실전에서 다져진 핵심 소프트 및 하드 스킬입니다.</p>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Skill Card 1 -->
+                <div class="skill-card card-glass reveal-on-scroll">
+                    <div class="skill-icon"><i class="fa-solid fa-crosshairs"></i></div>
+                    <h3 class="skill-name">위기 대처 및 빠른 판단력</h3>
+                    <div class="skill-progress-bar">
+                        <div class="progress-fill" style="width: 95%;"></div>
+                    </div>
+                    <p class="skill-desc">프로게이머 시절 매 순간 압박 속에서 빠르게 적의 전력을 분석하고 돌파구를 찾아내던 능력을 소유하고 있습니다. 위기의 순간 침착함을 유지합니다.</p>
+                </div>
+
+                <!-- Skill Card 2 -->
+                <div class="skill-card card-glass reveal-on-scroll">
+                    <div class="skill-icon"><i class="fa-solid fa-users"></i></div>
+                    <h3 class="skill-name">커뮤니케이션 & 협동심</h3>
+                    <div class="skill-progress-bar">
+                        <div class="progress-fill" style="width: 98%;"></div>
+                    </div>
+                    <p class="skill-desc">4인 스쿼드 중심의 배틀그라운드 경기 운영 및 군 생활에서 다져진 뛰어난 소통 능력을 바탕으로, 조직원들의 강점을 살려 목표를 달성하게 이끕니다.</p>
+                </div>
+
+                <!-- Skill Card 3 -->
+                <div class="skill-card card-glass reveal-on-scroll">
+                    <div class="skill-icon"><i class="fa-solid fa-brain"></i></div>
+                    <h3 class="skill-name">전략적 사고 & 기획력</h3>
+                    <div class="skill-progress-bar">
+                        <div class="progress-fill" style="width: 90%;"></div>
+                    </div>
+                    <p class="skill-desc">판을 읽는 넓은 시야로 장기적인 리스크를 계산하고 동선을 구축하는 오더(Order) 능력이 뛰어납니다. 새로운 상황에 유연하고 영리하게 적응합니다.</p>
+                </div>
+
+                <!-- Skill Card 4 -->
+                <div class="skill-card card-glass reveal-on-scroll">
+                    <div class="skill-icon"><i class="fa-solid fa-dumbbell"></i></div>
+                    <h3 class="skill-name">회복 탄력성 & 강인한 멘탈</h3>
+                    <div class="skill-progress-bar">
+                        <div class="progress-fill" style="width: 93%;"></div>
+                    </div>
+                    <p class="skill-desc">실패나 역경에 굴하지 않고, 빠르게 자기반성을 거쳐 성장 발판으로 삼는 강인한 멘탈과 체력을 군 복무 및 긴장도 높은 경쟁 세계에서 구축했습니다.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Contact -->
+        <section id="contact" class="snap-section contact-section">
+            <div class="section-header">
+                <span class="section-tag">Get in Touch</span>
+                <h2 class="section-title">연락하기</h2>
+                <p class="section-desc">언제든지 아래의 연락처로 손쉽게 연락하실 수 있습니다. (클릭하여 정보를 복사하거나 메일을 발송하세요)</p>
+            </div>
+
+            <div class="contact-container reveal-on-scroll">
+                <div class="contact-grid">
+                    <!-- Contact Box 1 -->
+                    <div class="contact-box card-glass" onclick="copyText('gimj6466@naver.com', '이메일 주소가 복사되었습니다!')">
+                        <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <h3 class="contact-label">이메일</h3>
+                        <p class="contact-value" id="emailVal">gimj6466@naver.com</p>
+                        <span class="contact-copy-btn"><i class="fa-regular fa-copy"></i> 복사하기</span>
+                    </div>
+
+                    <!-- Contact Box 2 -->
+                    <div class="contact-box card-glass" onclick="copyText('010-8104-7940', '전화번호가 복사되었습니다!')">
+                        <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                        <h3 class="contact-label">전화번호</h3>
+                        <p class="contact-value" id="phoneVal">010-8104-7940</p>
+                        <span class="contact-copy-btn"><i class="fa-regular fa-copy"></i> 복사하기</span>
+                    </div>
+
+                    <!-- Contact Box 3 -->
+                    <div class="contact-box card-glass" onclick="window.open('https://pubg.gamepedia.com', '_blank')">
+                        <div class="contact-icon"><i class="fa-solid fa-trophy"></i></div>
+                        <h3 class="contact-label">프로필 링크</h3>
+                        <p class="contact-value">PUBG Pro Gamer Profile</p>
+                        <span class="contact-copy-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> 열기</span>
+                    </div>
+                </div>
+                
+                <!-- Toast Notification for Copying -->
+                <div id="toast" class="toast">복사되었습니다!</div>
+            </div>
+
+            <!-- Footer integrated inside final section -->
+            <footer class="footer-inside">
+                <p>&copy; 2026 JH.KIM. All rights reserved.</p>
+                <p class="footer-sub">Designed with esports & military dedication in mind.</p>
+            </footer>
+        </section>
+    </div>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
